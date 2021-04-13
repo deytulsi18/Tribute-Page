@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style1.css">
@@ -15,23 +13,29 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar h-nav-resp">
         <div class="first-div">
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
+            <ul class="nav-list v-class-resp">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#facts">Facts</a></li>
                 <li><a href="#songs">Songs</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
     <section class="first-sec" id="home">
         <div class="container">
             <div class="column-image">
                 <div id="image-div">
-                    <img id="img-main" src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/img.jpg"
-                        alt="Arijit-Singh-Image" width="472"
-                        height="495">
+                    <img id="img-main"
+                        src="https://raw.githubusercontent.com/deytulsi18/Tribute-Page/main/images/img.jpg"
+                        alt="Arijit-Singh-Image" width="472" height="495">
                 </div>
             </div>
             <div class="column-header">
@@ -170,8 +174,9 @@
                     <p class="song-items">Movie - CHHICHHORE</p>
                 </div>
                 <div>
-                    <iframe class="song-items" width="560" height="315" src="https://www.youtube.com/embed/Umqb9KENgmk" title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="song-items" width="560" height="315" src="https://www.youtube.com/embed/Umqb9KENgmk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="song-items">Song: Tum Hi Ho <br></p>
                     <p class="song-items">Movie: Aashiqui 2</p>
@@ -187,12 +192,68 @@
             </div>
         </div>
     </section>
+    <section class="fifth-sec" id="awards">
+        <div class="awards">
+            <h3 class="awards-heading">Filmfare Awards</h3>
+            <p>2020 - Best Playback Singer (Male) - Kalank <br>
+                2019 - Best Playback Singer (Male) - Raazi <br>
+                2018 - Best Playback Singer (Male) - Badrinath Ki Dulhania <br>
+                2017 - Best Playback Singer (Male) - Ae Dil Hai Mushkil <br>
+                2016 - Best Playback Singer (Male) - Roy <br>
+                2014 - Best Playback Singer (Male) - Aashiqui 2</p>
+        </div>
+        <div class="awards">
+            <h3 class="awards-heading">National Awards</h3>
+            <p>2018 - Best Male Playback Singer - Padmaavat</p>
+        </div>
+        <div class="awards">
+            <h3 class="awards-heading">IIFA</h3>
+            <p>2019 - Best Male Playback Singer - Raazi <br>
+                2018 - Best Playback Singer (Male) - Jab Harry Met Sejal <br>
+                2014 - Best Male Playback Singer - Aashiqui 2</p>
+        </div>
+        <div class="awards">
+            <h3 class="awards-heading">Mirchi Music Awards</h3>
+            <p>2021 - Listener's Choice - Album Of The Decade - Aashiqui 2 <br>
+                2021 - Listener's Choice- Song Of The Decade - Tamasha <br>
+                2020 - Song Of The Year - Kalank <br>
+                2020 - Male Vocalist Of The Year - Kalank <br>
+                2019 - Album Of The Year - Padmaavat <br>
+                2019 - Listener's Choice Album Of The Year - Sonu Ke Titu Ki Sweety <br>
+                2018 - Song Of The Year - Jab Harry Met Sejal <br>
+                2018 - Album Of The Year - Jab Harry Met Sejal <br>
+                2018 - Male Vocalist Of The Year - Jab Harry Met Sejal <br>
+                2017 - Song Of The Year - Ae Dil Hai Mushkil <br>
+                2017 - Album Of The Year - Ae Dil Hai Mushkil <br>
+                2017 - Male Vocalist Of The Year - Ae Dil Hai Mushkil <br>
+                2016 - Song Of The Year - Dilwale <br>
+                2015 - Vocalist (Male) Of The Year - Humpty Sharma Ki Dulhaniya</p>
+        </div>
+        <div class="awards">
+            <h3 class="awards-heading">Zee Cine Awards</h3>
+            <p>2020 - Best Playback Singer (Male) <br>
+                2017 - Best Male Playback Singer - Ae Dil Hai Mushkil <br>
+                2017 - Viewer's Choice Song Of The Year - Ae Dil Hai Mushkil <br>
+                2016 - Best Playback Singer - Male - Roy <br></p>
+        </div>
+    </section>
     <section class="footer">
         <div>
             <a href="#" class="up">&#9650</a>
         </div>
         <p class="para"> We love you Arijit Singh &#10084;&#65039;</p>
     </section>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navList = document.querySelector('.nav-list')
+
+        burger.addEventListener('click', () => {
+            navList.classList.toggle('v-class-resp');
+            navbar.classList.toggle('h-nav-resp');
+        })
+
+    </script>
 </body>
 
 </html>
