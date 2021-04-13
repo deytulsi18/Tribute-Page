@@ -220,10 +220,10 @@ iframe {
     padding-top: 0.1em;
     display: block;
   }
-  .h-nav-resp {
+  .nav-resp {
     height: 2.5em;
   }
-  .v-class-resp {
+  .class-resp {
     opacity: 0;
   }
 }
