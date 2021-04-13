@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@ html {
 }
 body {
   background-color: #aa1111;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
 }
 .navbar {
@@ -36,21 +39,25 @@ body {
   color: rgb(255, 255, 0);
 }
 h1 {
+  font-family: "Libre Baskerville", serif;
   font-size: 6rem;
   padding: 1rem;
   font-weight: bold;
 }
 h2 {
+  font-family: "Libre Baskerville", serif;
   font-size: 3rem;
   padding: 4rem 1rem 2rem;
 }
 h3 {
+  font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   padding: 1rem 1rem 2rem;
 }
 #subheader {
   color: rgb(255, 251, 0);
-  font-size: x-large;
+  font-family: "Libre Baskerville", serif;
+  font-size: large;
   text-transform: uppercase;
   padding: 0 1rem 2rem 1rem;
 }
@@ -65,7 +72,6 @@ h3 {
   background-color: #aa1111;
   background-image: linear-gradient(#aa1111, #ce0000);
   padding: 1rem;
-
 }
 .second-sec {
   background-color: #fff;
@@ -116,7 +122,8 @@ iframe {
 }
 .song-items {
   margin: 0 1rem;
-  padding: 0.1rem 1rem;
+  padding: 0.1rem 3rem;
+  font-family: sans-serif;
 }
 .center-headings {
   text-align: center;
