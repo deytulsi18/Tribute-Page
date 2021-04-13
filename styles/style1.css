@@ -179,7 +179,7 @@ iframe {
   height: 4px;
   margin: 3px 3px;
 }
-@media only screen and (max-width: 1295px) {
+@media only screen and (max-width: 1275px) {
   .songs {
     display: flex;
     flex-direction: column;
